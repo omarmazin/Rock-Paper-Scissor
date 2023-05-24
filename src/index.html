@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../dist/output.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/Favicon Collection/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/Favicon Collection/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/Favicon Collection/favicon-16x16.png">
+    <link rel="manifest" href="/assets/Favicon Collection/site.webmanifest">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="bg-transparent">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex-shrink-0 flex items-center">
+                    <img class="h-20 py-2 w-auto" src="/assets/Images/Logo.png" alt="Logo">
+                </div>
+                <div class="flex items-center">
+                    <p class="text-teal-800 py-1 px-0 rounded-md text-lg font-medium ">
+                        Rock Papper Scissor Project
+                    </p>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="bg-green-500 p-8 rounded-lg shadow-lg mx-auto my-10 w-2/3 text-center">
+        <h1 class="text-2xl font-bold text-white mb-4 tracking-wide">Playground</h1>
+        <!-- <p class="text-1xl text-white font-bold ">Your lives is : <span class="font-mono" id="lives">5</span> </p> -->
+        <div class="container mx-auto px-3 py-3 ">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 ">
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-95 transition-5 duration-100 "
+                    id="rock">
+                    <img class="h-48 w-full object-contain cursor-pointer" src="/assets/Images/Rock.png" alt="Rock">
+                    <div class="p-4">
+                        <h2 class="font-bold text-gray-800 text-xl mb-2 choice">Rock</h2>
+                    </div>
+                </div>
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-95 transition-5 duration-100"
+                    id="paper">
+                    <img class="h-48 w-full object-contain cursor-pointer" src="/assets/Images/Paper.png" alt="Paper">
+                    <div class="p-4">
+                        <h2 class="font-bold text-gray-800 text-xl mb-2 choice" >Paper</h2>
+                    </div>
+                </div>
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-95 transition-5 duration-100"
+                    id="scissor">
+                    <img class="h-48 w-full object-contain cursor-pointer" src="/assets/Images/Scissor.png"
+                        alt="Scissor">
+                    <div class="p-4">
+                        <h2 class="font-bold text-gray-800 text-xl mb-2 choice">Scissor</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-between px-36 ">
+            <p class="text-2xl font-bold text-white py-5">You : <span class="font-mono" id="you">0</span></p>
+            <p class="text-2xl font-bold text-white py-5">Computer : <span class="font-mono" id="computer">0</span></p>
+        </div>
+        <button onclick="rules()" id="rules"
+            class="bg-gradient-to-r from-blue-500 to-slate-500 text-white py-2 px-4 rounded-full shadow-md hover:shadow-lg">
+            Rules
+        </button>
+
+    </div>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+    crossorigin="anonymous"></script>
+
+<script src="/main.js"></script>
+
+</html>
